@@ -68,13 +68,13 @@ library
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.18.0.0
+    build-depends:    base ^>=4.13.0.0
 
     -- Directories containing source files.
     hs-source-dirs:   src-lib
 
     -- Base language which the package is written in.
-    default-language: GHC2021
+    default-language: Haskell2010
 
 executable hastex
     -- Import common warning flags.
@@ -91,23 +91,21 @@ executable hastex
 
     -- Other library packages from which modules are imported.
     build-depends:
-        base ^>=4.18.0.0,
+        base ^>=4.13.0.0,
         hastex
-	parsec >= 3.1.11 && < 4
-	pdf-toolbox >= 0.8.0 && < 1
 
     -- Directories containing source files.
     hs-source-dirs:   app
 
     -- Base language which the package is written in.
-    default-language: GHC2021
+    default-language: Haskell2010
 
 test-suite hastex-test
     -- Import common warning flags.
     import:           warnings
 
     -- Base language which the package is written in.
-    default-language: GHC2021
+    default-language: Haskell2010
 
     -- Modules included in this executable, other than Main.
     -- other-modules:
