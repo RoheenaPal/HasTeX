@@ -1,0 +1,2 @@
+# HasTeX
+Compiler with Haskell
