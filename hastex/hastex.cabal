@@ -35,7 +35,7 @@ license:            NONE
 author:             Roheena Pal
 
 -- An email address to which users can send suggestions, bug reports, and patches.
-maintainer:         palroheena@gmail.com, jalasutramkeerthisaray@gmail.com, shreyashidas1styearcse@gmail.com
+maintainer:         palroheena@gmail.com, jalasutramkeerthisarayu@gmail.com, shreyashidas1styearcse@gmail.com
 
 -- A copyright notice.
 -- copyright:
@@ -64,7 +64,10 @@ executable hastex
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.13.0.0, haskell-say ^>=1.0.0.0
+      build-depends:  base >=4.13 && <4.14, 
+                      haskell-say ^>=1.0.0.0, 
+                      parsec >= 3.1.14 && < 4,
+                      pdf-toolbox >= 0.8.0 && < 1
 
     -- Directories containing source files.
     hs-source-dirs:   app
